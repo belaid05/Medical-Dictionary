@@ -497,7 +497,4 @@ data.forEach(item => {
         })
     }
 
-    input.addEventListener("focusout", () => {
-        result_div.classList.remove('show')
-        input.value = ''
-    })
+    
