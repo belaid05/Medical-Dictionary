@@ -449,7 +449,7 @@ data.forEach(item => {
     let input = document.querySelector('.search-input')
     let result_div = document.querySelector('.instant-results');
     input.onkeyup = () => {
-        var instant_result = data.filter((item, i) => data[i].term.toLowerCase().includes(input.value)) 
+        var instant_result = data.filter((item, i) => data[i].term.toLowerCase().startsWith(input.value)) 
         if (input.value.length && instant_result == "[]") {
             result_div.classList.remove('show')
         } else if(input.value.length) {
